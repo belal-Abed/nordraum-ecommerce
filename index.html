@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NORDRAUM — sorgfältig ausgewählte Technik für moderne Räume." />
+    <meta name="theme-color" content="#f3efe8" />
+    <title>NORDRAUM — Modern Tech Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer>
+    </script>
+  </head>
+  <body>
+    <div class="announcement">
+      <span>Free shipping in Germany from €75</span>
+      <span class="announcement-dot"></span>
+      <span>30-day returns</span>
+    </div>
+    <header class="site-header" id="header">
+      <a class="brand" href="#top" aria-label="NORDRAUM home">NORD<span>RAUM</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#story">Our story</a>
+        <a href="#journal">Journal</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn search-toggle" aria-label="Open search"><span>⌕</span></button>
+        <button class="icon-btn cart-toggle" aria-label="Open shopping bag">Bag <b class="cart-count">0</b></button>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+      </div>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Designed for everyday focus</p>
+          <h1>Less noise.<br><em>Better tools.</em></h1>
+          <p class="hero-text">Thoughtful technology for calmer desks, clearer sound and more intentional everyday moments.</p>
+          <a class="btn btn-dark" href="#shop">Explore collection <span>↗</span></a>
+        </div>
+        <div class="hero-visual reveal" data-delay="1">
+          <div class="visual-orbit orbit-one">
+          </div>
+          <div class="visual-orbit orbit-two">
+          </div>
+          <div class="product-sculpture">
+            <div class="speaker-top">
+            </div>
+            <div class="speaker-body">
+              <span></span>
+            </div>
+            <div class="speaker-shadow">
+            </div>
+          </div>
+          <div class="hero-note">
+            <span>01</span>
+            <p>Quiet form<br>Powerful sound</p>
+          </div>
+        </div>
+        <div class="hero-index">N / 01</div>
+      </section>
+      <section class="marquee" aria-label="Store values">
+        <div class="marquee-track">
+          <span>Considered design ✦ Built to last ✦ Berlin spirit ✦ Secure checkout ✦ Considered design ✦ Built to last ✦ Berlin spirit ✦ Secure checkout ✦</span>
+        </div>
+      </section>
+      <section class="shop-section" id="shop">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">The collection</p>
+            <h2>Objects worth<br>living with.</h2>
+          </div>
+          <p>Every piece earns its place through function, material and a quietly distinctive point of view.</p>
+        </div>
+        <div class="shop-toolbar reveal">
+          <div class="filters" role="group" aria-label="Product filters">
+            <button class="filter active" data-category="all">All</button>
+            <button class="filter" data-category="smartphones">Mobile</button>
+            <button class="filter" data-category="laptops">Work</button>
+            <button class="filter" data-category="beauty">Care</button>
+          </div>
+          <label class="sort-label">Sort <select id="sort"><option value="featured">Featured</option><option value="low">Price: low</option><option value="high">Price: high</option><option value="rating">Best rated</option></select></label>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite">
+          <div class="loader">
+            <span></span>
+            <p>Curating the collection…</p>
+          </div>
+        </div>
+        <button class="btn btn-outline load-more" id="loadMore">Show more <span>↓</span></button>
+      </section>
+      <section class="story" id="story">
+        <div class="story-art reveal">
+          <div class="story-disc">
+          </div>
+          <div class="story-card">NORDRAUM
+            <br>
+            <small>BERLIN / 2026</small>
+          </div>
+        </div>
+        <div class="story-copy reveal">
+          <p class="eyebrow">Our approach</p>
+          <h2>Technology can feel human.</h2>
+          <p>We look beyond specifications. NORDRAUM selects products that make daily rituals simpler, spaces calmer and ownership more rewarding.</p>
+          <div class="metrics">
+            <div>
+              <strong>48h</strong>
+              <span>dispatch</span>
+            </div>
+            <div>
+              <strong>30</strong>
+              <span>days return</span>
+            </div>
+            <div>
+              <strong>4.9</strong>
+              <span>community rating</span>
+            </div>
+          </div>
+          <a href="#journal" class="text-link">Read our philosophy <span>→</span></a>
+        </div>
+      </section>
+      <section class="journal" id="journal">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Journal / 03</p>
+            <h2>Ideas for a<br>quieter life.</h2>
+          </div>
+        </div>
+        <div class="journal-grid">
+          <article class="journal-card reveal">
+            <div class="journal-img journal-one">
+              <span>Focus</span>
+            </div>
+            <p>Spaces</p>
+            <h3>How to build a desk that helps you think</h3>
+            <a href="#">Read story →</a>
+          </article>
+          <article class="journal-card reveal" data-delay="1">
+            <div class="journal-img journal-two">
+              <span>Sound</span>
+            </div>
+            <p>Listening</p>
+            <h3>The art of hearing more by owning less</h3>
+            <a href="#">Read story →</a>
+          </article>
+          <article class="journal-card reveal" data-delay="2">
+            <div class="journal-img journal-three">
+              <span>Care</span>
+            </div>
+            <p>Rituals</p>
+            <h3>Small tools, meaningful daily rituals</h3>
+            <a href="#">Read story →</a>
+          </article>
+        </div>
+      </section>
+      <section class="newsletter reveal">
+        <p class="eyebrow">Stay in the room</p>
+        <h2>Good things,<br>occasionally.</h2>
+        <p>New objects, considered ideas, no inbox noise.</p>
+        <form id="newsletterForm">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" placeholder="Your email address" required>
+          <button type="submit">Join us <span>→</span></button>
+        </form>
+        <small>By subscribing, you accept our privacy policy.</small>
+      </section>
+    </main>
+    <footer>
+      <a class="brand footer-brand" href="#top">NORD<span>RAUM</span></a>
+      <div class="footer-links">
+        <div>
+          <p>Explore</p>
+          <a href="#shop">Collection</a>
+          <a href="#story">Our story</a>
+          <a href="#journal">Journal</a>
+        </div>
+        <div>
+          <p>Support</p>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <p>Legal</p>
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">AGB</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 NORDRAUM Berlin</span>
+        <span>Made with intention.</span>
+      </div>
+    </footer>
+    <div class="overlay" id="overlay">
+    </div>
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="drawer-head">
+        <h2>Your bag</h2>
+        <button class="close-drawer" aria-label="Close bag">×</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+      </div>
+      <div class="cart-empty" id="cartEmpty">
+        <div>○</div>
+        <h3>Your bag is beautifully empty.</h3>
+        <p>Explore pieces designed to earn their place.</p>
+        <button class="btn btn-dark close-and-shop">Start shopping</button>
+      </div>
+      <div class="cart-summary" id="cartSummary">
+        <div>
+          <span>Subtotal</span>
+          <strong id="cartTotal">€0.00</strong>
+        </div>
+        <p>Tax included. Shipping calculated at checkout.</p>
+        <button class="btn btn-dark checkout-btn">Checkout <span>→</span></button>
+      </div>
+    </aside>
+    <div class="search-panel" id="searchPanel">
+      <button class="close-search" aria-label="Close search">×</button>
+      <label for="searchInput">What are you looking for?</label>
+      <div>
+        <input id="searchInput" type="search" placeholder="Search the collection…">
+        <span>↵</span>
+      </div>
+      <p>Try “phone”, “laptop” or “care”</p>
+    </div>
+    <div class="toast" id="toast" role="status">Added to your bag</div>
+  </body>
+</html>
